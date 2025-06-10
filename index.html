@@ -5,7 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./scripts.js"></script>
-    <title>Document</title>
+    <title>Blog preview card</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <article class="card">
+        <div class="blog-image">
+          <img
+            src="./public/assets/images/blog image2.png"
+            srcset="./public/assets/images/blog image.png 480w, ./public/assets/images/blog image2.png 1024w"
+            sizes="(max-width: 600px) 100vw, 50vw"
+            class="blog-image"
+            alt="Shapes image"
+          />
+        </div>
+        <div class="content">
+          <button>Learning</button>
+          <span>Published 21 Dec 2023</span>
+          <h4 class="title">HTML & CSS foundations</h4>
+          <p>
+            These languagues are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="author">
+          <img src="./public/assets/images/man-mobile.jpg" alt="Author" />
+          <span>Greg Hooper</span>
+        </div>
+      </article>
+    </div>
+  </body>
 </html>
