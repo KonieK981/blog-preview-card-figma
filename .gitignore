@@ -1,0 +1,28 @@
+# OS-spaecific files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Editor/IDE config
+.vscode/
+.idea/
+*.swp
+
+# Figma or design exports
+*.fig
+*.sketch
+*.xd
+
+# Dependency lock if not needed
+package-lock.json
+yarn.lock
