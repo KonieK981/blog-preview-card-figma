@@ -52,7 +52,7 @@ li {
   flex-direction: column;
   gap: var(--space-300);
   width: 100%;
-  max-width: 450px;
+  max-width: 384px;
   padding: var(--space-300);
   background-color: var(--white);
   border: 1px solid var(--gray-950);
@@ -93,10 +93,25 @@ li {
     padding: var(--space-50) var(--space-150);
     background-color: var(--yellow);
   }
+  @media (min-width: 992px) {
+    button,
+    span {
+      font-size: 14px;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
 }
+
 .title {
   font-size: 20px;
   color: var(--gray-950);
+}
+
+.title:hover {
+  color: var(--yellow);
+  cursor: pointer;
 }
 
 .author {
@@ -116,5 +131,11 @@ li {
     color: var(--gray-950);
     font-size: 14px;
     font-weight: 800;
+  }
+}
+
+@media (min-width: 992px) {
+  .title {
+    font-size: 24px;
   }
 }
