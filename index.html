@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <article class="card">
-        <div class="blog-image">
+        <!-- <div class="blog-image">
           <img
             src="./public/assets/images/blog image2.png"
             srcset="./public/assets/images/blog image.png 480w, ./public/assets/images/blog image2.png 1024w"
@@ -18,10 +18,117 @@
             class="blog-image"
             alt="Shapes image"
           />
+        </div> -->
+        <div class="group-picture">
+          <svg
+            width="102"
+            height="200"
+            viewBox="0 0 102 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="pic-1"
+          >
+            <path
+              d="M19.3394 149.074L7.19457 161.219L21.4515 175.476V188.148H34.1243L47.8532 201.877L59.998 189.732"
+              stroke="#111111"
+              stroke-width="3"
+            />
+            <path
+              d="M44.6851 123.728L32.5403 135.873L46.7972 150.13V162.803H59.47L73.1989 176.532L85.3437 164.387"
+              stroke="#111111"
+              stroke-width="3"
+            />
+            <path
+              d="M70.0308 98.3826L57.886 110.527L72.1429 124.784V137.457H84.8157L98.5446 151.186L110.689 139.041"
+              stroke="#111111"
+              stroke-width="3"
+            />
+            <path
+              d="M95.3762 73.0369L83.2314 85.1817L97.4884 99.4386V112.111H110.161L123.89 125.84L136.035 113.696"
+              stroke="#111111"
+              stroke-width="3"
+            />
+            <path
+              d="M120.722 47.6913L108.577 59.8361L122.834 74.093V86.7658H135.507L149.236 100.495L161.381 88.3499"
+              stroke="white"
+              stroke-width="5"
+            />
+          </svg>
+
+          <svg
+            width="127"
+            height="125"
+            viewBox="0 0 127 125"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="rec-1"
+          >
+            <!-- Estado inicial -->
+            <rect
+              x="-18.886"
+              y="77.229"
+              width="139"
+              height="95"
+              rx="47.5"
+              transform="rotate(-45 -18.886 77.229)"
+              fill="white"
+            />
+            <!-- Estado morph (ejemplo: un rectángulo más pequeño y sin rotar) -->
+            <rect
+              x="10"
+              y="10"
+              width="80"
+              height="80"
+              rx="20"
+              fill="white"
+              style="display: none"
+            />
+          </svg>
+          <img
+            class="rec-2"
+            src="./public/assets/images/rectangle 2.svg"
+            alt=""
+          />
+          <img
+            class="rec-3"
+            src="./public/assets/images/rectangle 3.svg"
+            alt=""
+          />
+          <img
+            class="rec-4"
+            src="./public/assets/images/rectangle 4.svg"
+            alt=""
+          />
+          <img
+            class="rec-5"
+            src="./public/assets/images/rectangle 5.svg"
+            alt=""
+          />
+          <img
+            class="pic-2"
+            src="./public/assets/images/mask group.svg"
+            alt=""
+          />
+          <svg
+            width="101"
+            height="200"
+            viewBox="0 0 101 200"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="vec-4"
+          >
+            <path
+              d="M28.3643 -38L89.2369 22.8726C101.734 35.3694 101.734 55.6306 89.2369 68.1274L11.4917 145.873C-1.00504 158.369 -1.00504 178.631 11.4917 191.127L81.3643 261"
+              stroke="#111111"
+              stroke-width="3"
+            />
+          </svg>
+          <img class="vec-5" src="./public/assets/images/vector 5.svg" alt="" />
+          <img class="ang" src="./public/assets/images/angles.svg" alt="" />
         </div>
         <div class="content">
           <button>Learning</button>
-          <span>Published 21 Dec 2023</span>
+          <span class="date-info">Published 21 Dec 2023</span>
           <h4 class="title">HTML & CSS foundations</h4>
           <p>
             These languagues are the backbone of every website, defining
@@ -29,10 +136,17 @@
           </p>
         </div>
         <div class="author">
-          <img src="./public/assets/images/man-mobile.jpg" alt="Author" />
+          <img
+            class="author-img"
+            src="./public/assets/images/man-mobile.jpg"
+            alt="Author"
+          />
           <span>Greg Hooper</span>
         </div>
       </article>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
